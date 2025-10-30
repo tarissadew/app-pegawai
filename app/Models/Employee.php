@@ -14,6 +14,13 @@ class Employee extends Model
         'alamat',
         'tanggal_masuk',
         'status',
+        'department_id',
+        'position_id',
     ];
+    // App/Models/Employee.php
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class, 'karyawan_id', 'id');
+    }
 }
 
