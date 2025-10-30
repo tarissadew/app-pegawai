@@ -74,5 +74,10 @@
             </tbody>
         </table>
     </div>
+
+    <!-- Add Pagination -->
+    <div class="flex justify-center mt-4">
+        {{ $employees->links() }}
+    </div>
 </div>
 @endsection

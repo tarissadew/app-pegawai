@@ -17,7 +17,6 @@
                 </a>
                 <nav class="flex-1">
                     <ul class="flex items-center gap-6 text-sm">
-                        <li><a class="hover:underline @if(request()->is('dashboard')) underline @endif" href="{{ url('/dashboard') }}">Dashboard</a></li>
                         <li><a class="hover:underline @if(request()->is('employees*')) underline @endif" href="{{ url('/employees') }}">Employee</a></li>
                         <li><a class="hover:underline @if(request()->is('departments*')) underline @endif" href="{{ url('/departments') }}">Department</a></li>
                         <li><a class="hover:underline @if(request()->is('positions*')) underline @endif" href="{{ url('/positions') }}">Position</a></li>
